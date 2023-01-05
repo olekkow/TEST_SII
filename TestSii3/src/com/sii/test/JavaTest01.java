@@ -19,8 +19,14 @@ public class JavaTest01 {
 			Integer value = mapa.get(key);
 			System.out.printf( " %s => %d \n", key, value );
 		}
-		
-		
+
+		 it = mapa.keySet().iterator();
+		while(it.hasNext()) {
+			String key = it.next();
+			Integer value = mapa.get(key);
+			System.out.printf( " %s => %d \n", key, value );
+		}
+
 	}
 
 }
